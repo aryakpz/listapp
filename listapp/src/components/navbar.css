@@ -1,0 +1,67 @@
+.navbar{
+    display: flex;
+    width: 100vw;
+    z-index: 1030;
+    position: fixed;
+}
+.subnavbar{
+    width: 100vw;
+    /* justify-content: space-between; */
+    background-color: rgb(37, 75, 77);
+    padding: 10px;
+    display: flex;
+
+}
+.subnavbar input{
+    height: 30px;
+    width: 30%;
+    padding: 5px;
+    margin-left: 10px;
+    border-radius: 5px;
+    border-color: transparent;
+}
+.subnavbar span{
+    height: 35px;
+    position: absolute;
+    right: 30px;
+    filter: invert();
+    display: flex;
+    top: 10px;
+    align-items: center;
+    gap: 5px;
+}
+.subnavbar span:hover{
+    filter: invert(0.8);
+    text-decoration: underline;
+}
+.subnavbar input:focus{
+    outline: none;
+}
+.count{
+    position: absolute;
+    right: -16px;
+    top: -20px;
+    padding: 1px;
+    border-radius: 50px;
+    font-size: 14px;
+    width: 13px;padding-left: 5px;
+    background-color: rgb(43, 243, 233) ;
+}
+.cartlogo img{
+    width: 25px;
+}
+.cartlogo{
+    cursor: pointer;
+
+}
+h3{
+    color: white;
+    margin-right: 10px;
+    align-items: center;
+    margin-top: 5px;
+}
+@media screen and (max-width : 1000px) {
+    .subnavbar input{
+        width: 70%;
+    }
+}

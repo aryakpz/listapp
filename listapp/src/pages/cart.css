@@ -1,0 +1,42 @@
+img{
+    width: 8rem;
+}
+.singlecart{
+    padding: 15px;
+    border: 1px solid black;
+    border-radius: 6px;
+    margin-bottom: 15px;
+    
+}
+.singlecart img{
+    margin-left: 50px;
+}
+
+button{
+    width: 90%;
+    background-color: rgb(37, 75, 77);
+    color: white;
+    padding: 8px;
+    border-radius: 8px;
+    border: none;
+}
+.cartproduct
+{
+    display: flex;
+    overflow: scroll;
+    flex-flow: column;
+    height: fit-content;
+}
+.cart
+{
+    display: flex;
+    flex-flow: column;
+    height: 100vh;
+    overflow: scroll;
+}
+
+p{
+    font-size: 26px;
+    font-weight: 600;
+    color: rgb(37, 75, 77);
+}

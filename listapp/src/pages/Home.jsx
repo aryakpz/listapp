@@ -12,7 +12,7 @@ export const Home = () => {
     const { addToCart } = useCart();
 
     const [searchTerm, setSearchTerm] = useState('');
-    const [filteredProducts, setFilteredProducts] = useState(products || []);
+    const [filteredProducts, setFilteredProducts] = useState(products);
 
     useEffect(() => {
         const filtered = products.filter(product =>
@@ -43,7 +43,7 @@ export const Home = () => {
                             </div>
                         ))
                     ) : (
-                        <p>No products match your search.</p>
+                        <p>No item Matches...</p>
                     )}
                 </div>
                 <div className="cartdisplay">

@@ -3,6 +3,7 @@ import React, { useState } from "react";
 import './navbar.css'
 import logo from '../asset/cart-shopping-solid.svg'
 import { useCart } from "./CartContext";
+import { Checkout } from "./checkout";
 
 
 export const Navbar = ({ onSearch }) => {

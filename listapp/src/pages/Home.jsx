@@ -5,6 +5,7 @@ import { useCart } from "../components/CartContext";
 import { useProducts } from "../components/productFetch";
 import { Cart } from "./Cart";
 import './home.css';
+import { Checkout } from "../components/checkout";
 
 
 export const Home = () => {
@@ -48,6 +49,7 @@ export const Home = () => {
                 </div>
                 <div className="cartdisplay">
                     <Cart/>
+                     
                 </div>
             </div>
         </div>

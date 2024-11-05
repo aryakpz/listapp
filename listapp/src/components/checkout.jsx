@@ -1,14 +1,11 @@
 import React from "react";
-import { useNavigate } from "react-router-dom";
+import { useCart } from "./CartContext";
 
 export const Checkout=()=>{
-    const nav=useNavigate();
-    const handleclick=()=>{
-        nav('.thankspage')
-    }
+  const {checkOutMessage}=useCart()
     return(
     <>
-      <button onclick={handleclick}>Check Out</button>
+      <button onClick={()=>checkOutMessage()}>Check Out</button>
     </>
     )
 }

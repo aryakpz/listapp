@@ -1,4 +1,5 @@
 import React, { createContext, useContext, useState } from 'react';
+import { ThanksPage } from './thankspage';
 
 const CartContext = createContext();
 
@@ -15,9 +16,19 @@ export const CartProvider = ({ children }) => {
     const removeFromCart = (productId) => {
         setCart(prevCart => prevCart.filter(item => item.id !== productId));
     };
+  
+    const checkOutMessage=()=>{
+        alert("Orderd SuccessFully !")
+        return(
+            <div>
+            <p>orderd successfully</p>
+        </div>
+        )
+    }
+
 
     return (
-        <CartContext.Provider value={{ cart, addToCart, removeFromCart }}>
+        <CartContext.Provider value={{ cart, addToCart, removeFromCart,checkOutMessage }}>
             {children}
         </CartContext.Provider>
     );

@@ -2,6 +2,7 @@
 import React from "react";
 import { useCart } from "../components/CartContext";
 import './cart.css'
+import { Checkout } from "../components/checkout";
 
 export const Cart = () => {
     const {cart,removeFromCart}=useCart()
@@ -29,6 +30,7 @@ export const Cart = () => {
                 </div>
             )}
          </div>
+         <Checkout/>
         </div>
     );
 };

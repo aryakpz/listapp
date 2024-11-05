@@ -8,6 +8,9 @@ export const Cart = () => {
     
     return (
         <div className="cart">
+            <div className="subcart">
+
+           
             <h2>Cart Items</h2>
             {cart.length === 0 ? (
                 <h5>Your cart is empty.</h5>
@@ -25,7 +28,7 @@ export const Cart = () => {
                     ))}
                 </div>
             )}
-        
+         </div>
         </div>
     );
 };

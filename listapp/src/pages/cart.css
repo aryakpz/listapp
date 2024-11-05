@@ -12,6 +12,9 @@ img{
     margin-left: 50px;
 }
 
+.subcart{
+    overflow: scroll;
+}
 button{
     width: 90%;
     background-color: rgb(37, 75, 77);
@@ -23,7 +26,7 @@ button{
 .cartproduct
 {
     display: flex;
-    overflow: scroll;
+    /* overflow: scroll; */
     flex-flow: column;
     height: fit-content;
 }
@@ -32,7 +35,7 @@ button{
     display: flex;
     flex-flow: column;
     height: 100vh;
-    overflow: scroll;
+   
 }
 
 p{

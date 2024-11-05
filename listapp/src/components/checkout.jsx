@@ -1,13 +1,14 @@
 import React from "react";
 import { useCart } from "./CartContext";
+import '../pages/cart.css'
 
-export const Checkout=()=>{
-  const {checkOutMessage}=useCart()
-    return(
+export const Checkout = () => {
+  const { checkOutMessage } = useCart()
+  return (
     <>
-      <button onClick={()=>checkOutMessage()}>Check Out</button>
+      <button onClick={() => checkOutMessage()} className="checkout">Check Out</button>
     </>
-    )
+  )
 }
 
 

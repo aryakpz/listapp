@@ -7,7 +7,9 @@ import { Checkout } from "./checkout";
 
 
 export const Navbar = ({ onSearch }) => {
+
     const {cart}=useCart()
+
     const handleInputChange = (event) => {
         onSearch(event.target.value);
     };
@@ -26,7 +28,7 @@ export const Navbar = ({ onSearch }) => {
                     placeholder="Search for products..."
                     onChange={handleInputChange}
                 />
-             <span onClick={handlecart} className="cartlogo"><img src={logo}/> cart<p className="count">{cart.length}</p></span>
+             <span onClick={handlecart} className="cartlogo"><img src={logo}/><h4>cart</h4> <p className="count">{cart.length}</p></span>
             </div>
         </div>
     );

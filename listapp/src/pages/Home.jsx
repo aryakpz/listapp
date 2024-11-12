@@ -5,13 +5,10 @@ import { useCart } from "../components/CartContext";
 import { useProducts } from "../components/productFetch";
 import { Cart } from "./Cart";
 import './home.css';
-import { Checkout } from "../components/checkout";
-
 
 export const Home = () => {
-    const { products } = useProducts(); 
+    const { products } = useProducts();
     const { addToCart } = useCart();
-
     const [searchTerm, setSearchTerm] = useState('');
     const [filteredProducts, setFilteredProducts] = useState(products);
 
@@ -20,11 +17,10 @@ export const Home = () => {
             product.title.toLowerCase().includes(searchTerm.toLowerCase())
         );
         setFilteredProducts(filtered);
-    }, [products, searchTerm]); 
+    }, [products, searchTerm]);
 
-   
     const handleSearch = (term) => {
-        setSearchTerm(term); 
+        setSearchTerm(term);
     };
 
     return (
@@ -44,12 +40,11 @@ export const Home = () => {
                             </div>
                         ))
                     ) : (
-                        <p>No item Matches...</p>
+                        <p>No item Matches...!</p>
                     )}
                 </div>
                 <div className="cartdisplay">
-                    <Cart/>
-                     
+                    <Cart />
                 </div>
             </div>
         </div>

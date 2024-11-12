@@ -1,3 +1,4 @@
+
 import React from "react";
 import { useCart } from "./CartContext";
 import '../pages/cart.css'
@@ -10,5 +11,4 @@ export const Checkout = () => {
     </>
   )
 }
-
-
+ 

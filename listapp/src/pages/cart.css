@@ -7,7 +7,6 @@ img {
     border: 1px solid black;
     border-radius: 6px;
     margin-bottom: 15px;
-    
 }
 
 .singlecart img {
@@ -31,14 +30,6 @@ button {
     display: flex;
     flex-flow: column;
     height: fit-content;
-   
-}
-
-.cart {
-    /* display: flex; */
-    /* flex-flow: column; */
-    /* height: 100vh; */
-    
 }
 
 p {
@@ -47,9 +38,9 @@ p {
     color: rgb(37, 75, 77);
 }
 
-.checkout{
+.checkout {
     font-size: 20px;
-    background-color: rgb(37,75,77);
+    background-color: rgb(37, 75, 77);
     margin-bottom: 30px;
     margin-top: 10px;
 }
